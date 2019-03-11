@@ -22,6 +22,8 @@ class Application
           resp.write "#{item}"
         end
       end
+    elsif resp.path.match(/add/)
+      
     else
       resp.write "Path Not Found"
     end
